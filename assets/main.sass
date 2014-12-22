@@ -1,0 +1,31 @@
+.horizontal-container
+  display: flex
+
+  > *
+    margin: 0
+
+.vertical-container
+  display: flex
+  flex-direction: column
+
+  > *
+    margin: 0
+
+.scroll-pane
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+
+.fit
+  flex: 1
+
+.aligned
+  align-items: center
+
+.spaced
+  > *:not(:last-child)
+    margin-right: 15px
+
+.sticky
+  position: sticky
+  top: 0
+  z-index: 1

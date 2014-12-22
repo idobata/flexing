@@ -1,0 +1,22 @@
+{
+  "name": "flexing",
+  "version": "0.0.1",
+  "authors": [
+    "ursm <ursm@ursm.jp>",
+    "hibariya <hibariya@gmail.com>"
+  ],
+  "description": "Tiny CSS toolkit based on flexible box",
+  "main": "assets/main.sass",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/idobata/flexing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
