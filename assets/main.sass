@@ -1,8 +1,16 @@
+$flexing-spaced-gutter: 12px !default
+
 .horizontal-container
   display: flex
 
   > *
     margin: 0
+
+  &.spaced
+    margin: 0 -$flexing-spaced-width / 2
+
+    > *
+      padding: 0 $flexing-spaced-width / 2
 
 .vertical-container
   display: flex
@@ -22,10 +30,6 @@
 
 .aligned
   align-items: center
-
-.spaced
-  > *:not(:last-child)
-    margin-right: 15px
 
 .sticky
   position: sticky
