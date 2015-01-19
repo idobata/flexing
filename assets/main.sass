@@ -3,21 +3,9 @@ $flexing-spaced-width: 12px !default
 .horizontal-container
   display: flex
 
-  > *
-    margin: 0
-
-  &.spaced
-    margin: 0 -$flexing-spaced-width / 2
-
-    > *
-      padding: 0 $flexing-spaced-width / 2
-
 .vertical-container
   display: flex
   flex-direction: column
-
-  > *
-    margin: 0
 
 .scroll-pane
   overflow-y: auto
@@ -30,6 +18,10 @@ $flexing-spaced-width: 12px !default
 
 .aligned
   align-items: center
+
+.spaced
+  *:not(:last-child)
+    margin-right: $flexing-spaced-width
 
 .sticky
   position: sticky
